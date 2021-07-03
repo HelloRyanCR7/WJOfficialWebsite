@@ -1,0 +1,35 @@
+.header {
+    position: absolute;
+    right: 30px;
+}
+
+.nav-ul {
+    list-style: none;
+    float: left;
+}
+
+.nav-item {
+    padding: 4px 2px;
+}
+
+.nav-item-selected {
+    border-bottom: 2px solid black;
+}
+
+.nav-item a {
+    font-weight: bold;
+    color: black;
+    text-decoration:none;
+}
+
+.footer {
+    position: absolute;
+    padding: 0 6px;
+    border-radius: 10px;
+    bottom: 0;
+    line-height: 16px;
+    background-color: rgba(255, 255, 255, 0.7);
+    left: 50%;
+    transform: translate(-50%,0);
+    font-size: 15px;
+}
