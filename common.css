@@ -1,35 +1,63 @@
-.header {
-    position: absolute;
-    right: 30px;
+/* 背景设置 */
+body{
+    position: relative;
+    background-image: url(./images/background.jpg);
+    width: 100%;
+    background-size:cover;
+    box-sizing: border-box;
+    padding: 16px;
+    text-align: center;
+    box-sizing: border-box;
 }
 
-.nav-ul {
-    list-style: none;
-    float: left;
+
+/* 导航栏设置 */
+.header {
+    position: relative;
+    min-height: 100px;
+}
+
+.nav {
+    text-align: center;
 }
 
 .nav-item {
+    display: inline-block;
     padding: 4px 2px;
+    text-decoration:none;
+    color: black;
+    font-weight: bold;
 }
 
 .nav-item-selected {
     border-bottom: 2px solid black;
 }
 
-.nav-item a {
-    font-weight: bold;
-    color: black;
-    text-decoration:none;
+@media screen and (min-width: 500px) {
+    .nav {
+        position: absolute;
+        right: 30px;
+    }
+    .nav-item {
+        margin: 10px;
+    }
 }
 
-.footer {
-    position: absolute;
-    padding: 0 6px;
-    border-radius: 10px;
-    bottom: 0;
-    line-height: 16px;
-    background-color: rgba(255, 255, 255, 0.7);
-    left: 50%;
-    transform: translate(-50%,0);
-    font-size: 15px;
+/* 展示内容 */
+.body {
+    position: relative;
 }
+
+/* 底部视图 */
+.footer {
+    margin: 30px auto 10px;
+}
+
+.contact-way{
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 6px;
+    border-radius: 10px;
+    font-size: 15px; 
+}
+

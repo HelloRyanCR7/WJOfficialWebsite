@@ -10,27 +10,11 @@
 
 <body>
     <header class="header">
-        <nav>
-            <ul class="nav-ul">
-                <li class="nav-item">
-                    <a href="./index.html">公司介绍</a>
-                </li>
-            </ul>
-            <ul class="nav-ul">
-                <li class="nav-item">
-                    <a href="./develop.html">发展历程</a>
-                </li>
-            </ul>
-            <ul class="nav-ul">
-                <li class="nav-item">
-                    <a href="./exhibition.html">企业展示</a>
-                </li>
-            </ul>
-            <ul class="nav-ul">
-                <li class="nav-item nav-item-selected">
-                    <a href="./position.html">招纳贤士</a>
-                </li>
-            </ul>
+        <nav class="nav">
+            <a class="nav-item" href="./index.html">公司介绍</a>
+            <a class="nav-item" href="./develop.html">发展历程</a>
+            <a class="nav-item" href="./exhibition.html">企业展示</a>
+            <a class="nav-item nav-item-selected">招纳贤士</a>
         </nav>
     </header>
     <div class="body">
@@ -40,7 +24,6 @@
                 2.竞升空间大，是展现自我价值的最佳平台<br>
                 3.企业处于上升期，需要大量人才与企业共成长、共发展<br>
                 4.温薪资待遇合理，所做与所得成正比
-
             </p>
         </section>
         <section class="description">
@@ -51,7 +34,6 @@
                 ②丰富的房产资源优势
                 ③优秀的施工团队
             </p>
-
             <p class="subtitle">02管理优势</p>
             <p>①完善的管理制度
                 ②人性化的管理
@@ -83,7 +65,7 @@
                 发生重大伤亡事故或重大未遂事故，要保护好现场，及时上报、组织抢救，协助上级分析调查处理事故。
                 工程竣工后，应按照规范和标准的要求，及时完成竣工资料的编制、装订、工程评定及验收工作。
                 完成领导交办的各项临时性任务，按时参加范围内的各种会议及各项集体活动。
-                
+
             </p>
             <p class="subtitle"> 项目资料员
             </p>
@@ -98,42 +80,25 @@
                 负责工程合同及其他合同的收集和存档，建立合同台帐；
                 配合项目经理和预结算员做好相关资料的编制、收集、整理和归档。
                 完成公司及项目部领导交办的其他工作。
-                
-                
+
+
             </p>
         </section>
     </div>
     <footer class="footer">
-        <p>联系方式：15234097522 &nbsp&nbsp&nbsp地址：太原市小店区龙城南街98号富力尚悦居办公楼1320室</p>
+        <span class="contact-way">联系方式：15234097522 &nbsp&nbsp&nbsp地址：太原市小店区龙城南街98号富力尚悦居办公楼1320室</span>
     </footer>
 </body>
 <style>
-    body {
-        position: relative;
-        background-image: url(./images/index_1.jpg);
-        width: 100%;
-        height: 2200px;
-        background-size: cover;
-        box-sizing: border-box;
-        padding: 20px 30px;
-    }
-
-    .body {
-        position: absolute;
-        top: 100px;
-        text-align: center;
-    }
-
     .description {
         text-align: left;
         display: inline-block;
         margin: 20px 0;
-        box-sizing: border-box;
         background-color: rgba(255, 255, 255, 0.9);
         padding: 12px;
         border-radius: 10px;
         line-height: 30px;
-        width: 800px;
+        width: 90%;
     }
 
     .title {
@@ -144,6 +109,12 @@
     .subtitle {
         font-weight: bold;
         font-size: 18px;
+    }
+
+    @media screen and (min-width:860px){
+        .description {
+            width: 800px;
+        }
     }
 </style>
 
